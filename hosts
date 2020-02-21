@@ -1,0 +1,12 @@
+[master]
+cl01
+
+[workers]
+cl02
+cl03
+cl04
+cl05
+
+
+[all:vars]
+ansible_python_interpreter=/usr/bin/python3
