@@ -38,16 +38,16 @@
       repo: deb http://apt.kubernetes.io/ kubernetes-xenial main
       state: present
       filename: 'kubernetes'
-
-   - name: install kubelet
-     apt:
-       name: kubelet=1.14.0-00
-       state: present
-       update_cache: true
        
    - name: install kubernetes-cni
      apt:
        name: kubernetes-cni=0.7.5-00
+       state: present
+       update_cache: true
+
+   - name: install kubelet
+     apt:
+       name: kubelet=1.14.0-00
        state: present
        update_cache: true
 
